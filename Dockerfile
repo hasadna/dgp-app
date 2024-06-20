@@ -1,4 +1,4 @@
-FROM python:3.7-slim
+FROM python:3.8-slim@sha256:0d83eed55f9e3539656956aacd9732922fd038a95281a4ddd3ec1b8438c581bd
 
 RUN apt-get update && apt-get install --no-install-recommends -y gcc libc6-dev linux-libc-dev libpq-dev libleveldb1d && \
     adduser --disabled-password --home /app etl && update-ca-certificates && \
